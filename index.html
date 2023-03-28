@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>#container {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  <style>
+    #container {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   </style>
-   <title>PLACES</title>
+  <title>PLACES</title>
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
   <script type="importmap">
     {
@@ -21,23 +22,15 @@
         }
     }
 </script>
-<!-- Import Three.js from a CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r133/three.min.js"></script>
+  <!-- Import Three.js from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r133/three.min.js"></script>
 
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
   <div id='map' style='width: 1000px; height: 700px;'></div>
-  // Create a new div element to hold the Three.js scene
-const new_container = document.createElement('div');
-
-// Set the container's ID to 'container'
-new_container.id = 'three-container';
-
-// Add the container to the body of the HTML document
-document.body.appendChild(new_container);
-<div id="new_container" style="position: absolute; top: 0; left: 0;"></div>
+  <div id="three-container" style="position: absolute; top: 0; left: 0;"></div>
   <script type="module" src="/chatgpt.js"></script>
 </body>
 
